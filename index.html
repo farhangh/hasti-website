@@ -6,12 +6,28 @@
 <meta name="description" content="Horizon Astrophysics Institute (HASTI)">
 <title>HASTI — Horizon Astrophysics Institute</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Publications: a compact, bibliography-style layout for the single-page site. */
+  .publications { max-width: 920px; }
+  .publication-year { display: grid; grid-template-columns: 96px 1fr; gap: 2rem; padding: 1.75rem 0; border-top: 1px solid rgba(17, 24, 39, .16); }
+  .publication-year:first-of-type { margin-top: 2rem; }
+  .publication-year h3 { margin: .1rem 0 0; font-size: 1.1rem; letter-spacing: .08em; }
+  .publication-list { list-style: none; padding: 0; margin: 0; }
+  .publication-list li + li { margin-top: 1.5rem; }
+  .publication-title { display: block; font-weight: 700; line-height: 1.45; }
+  .publication-authors, .publication-venue { margin: .25rem 0 0; line-height: 1.55; }
+  .publication-venue { font-style: italic; }
+  .publication-links { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: .45rem; font-size: .9rem; }
+  .publication-links a { text-underline-offset: .2em; }
+  .publication-note { margin-top: 2rem; color: #56606c; font-size: .95rem; }
+  @media (max-width: 600px) { .publication-year { grid-template-columns: 1fr; gap: .6rem; padding: 1.35rem 0; } }
+</style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
     <a class="brand" href="#home"><b>HASTI</b><span>Horizon Astrophysics Institute</span></a>
-    <nav><a href="#about">About</a><a href="#research">Research</a><a href="#people">People</a><a href="#contact">Contact</a></nav>
+    <nav><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#people">People</a><a href="#contact">Contact</a></nav>
   </div>
 </header>
 
@@ -45,6 +61,40 @@
 <article><h3>Galactic hidden gas</h3><p>Search for missing baryons through scintillation effect.</p></article>
 <article><h3>Computational Astrophysics and AI</h3><p>Numerical simulations, Machine learning and statistical methods applied to astrophysical data.</p></article>
 </div>
+</div>
+</section>
+
+<section id="publications" class="section">
+<div class="wrap publications">
+<p class="eyebrow">PUBLICATIONS</p>
+<h2>Scientific publications</h2>
+<p>Peer-reviewed articles and conference contributions from HASTI researchers and collaborators.</p>
+
+<div class="publication-year">
+  <h3>2026</h3>
+  <ol class="publication-list">
+    <li>
+      <span class="publication-title">Publication title to be added</span>
+      <p class="publication-authors">Author name(s) to be added</p>
+      <p class="publication-venue">Journal or conference name, volume, pages (2026)</p>
+      <div class="publication-links"><a href="#" aria-label="DOI link to be added">DOI</a><a href="#" aria-label="External publication link to be added">External link</a></div>
+    </li>
+  </ol>
+</div>
+
+<div class="publication-year">
+  <h3>2025</h3>
+  <ol class="publication-list">
+    <li>
+      <span class="publication-title">Publication title to be added</span>
+      <p class="publication-authors">Author name(s) to be added</p>
+      <p class="publication-venue">Journal or conference name, volume, pages (2025)</p>
+      <div class="publication-links"><a href="#" aria-label="DOI link to be added">DOI</a><a href="#" aria-label="External publication link to be added">External link</a></div>
+    </li>
+  </ol>
+</div>
+
+<p class="publication-note">This list will be expanded as HASTI research outputs are published.</p>
 </div>
 </section>
 
