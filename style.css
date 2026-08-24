@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 :root{--ink:#102033;--muted:#5d6b7c;--line:#dce4ec;--pale:#f4f7fa;--blue:#1b5d8f;--gold:#c99a3e}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.narrow{max-width:820px}
+span style="white-space: pre-line">@Model.CommentText</span>
+body{margin:0;color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+.narrow{max-width:820px}
 header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}.brand b{font:700 21px "Space Grotesk";letter-spacing:.08em}
