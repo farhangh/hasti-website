@@ -70,7 +70,7 @@ h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.03em;margin:0 0 22px}h3{font-
     border: 1px solid var(--line);
     border-radius: 12px;
     padding: 25px;
-    background: var(--ink);
+    background: #fff;
     color: white;
 }
 .advisor h3 {
