@@ -25,13 +25,21 @@ h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.03em;margin:0 0 22px}h3{font-
 .cards article{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;min-height:300px}
 .cards p{font-size:14px}.people{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px}
 .person{border:1px solid var(--line);border-radius:12px;padding:25px;background:#fff}
-.avatar{width:56px;height:56px;border-radius:50%;background:#e8eef4;color:var(--blue);display:grid;place-items:center;font-weight:700;float:left;margin-right:16px}
+.person {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 25px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 .avatar {
     width: 56px;
     height: 56px;
+    flex: 0 0 56px;
     border-radius: 50%;
     overflow: hidden;
-    flex-shrink: 0;
 }
 .avatar img {
     width: 100%;
