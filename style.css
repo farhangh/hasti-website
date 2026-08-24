@@ -70,7 +70,8 @@ h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.03em;margin:0 0 22px}h3{font-
     border: 1px solid var(--line);
     border-radius: 12px;
     padding: 25px;
-    background: #fff;
+    background: var(--ink);
+    color: white;
 }
 .advisor h3 {
     margin: 0 0 8px;
@@ -132,36 +133,3 @@ footer{background:#0b1826;color:#9eacb8;font-size:12px}.foot{min-height:70px;dis
                         .hero-grid,.people,.contact-grid{grid-template-columns:1fr}.space-art{height:300px}.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:850px){.wrap{width:calc(100% - 28px)}.hero,.section,.contact{padding:62px 0}.cards{grid-template-columns:1fr1fr;}
                         .foot{flex-direction:column;justify-content:center;padding:18px 0;gap:5px}}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --ink: #e8edf2;
-        --muted: #aeb9c4;
-        --line: #344454;
-        --pale: #162231;
-    }
-    body {
-        background: #0b1826;
-        color: var(--ink);
-    }
-    header {
-        background: rgba(11, 24, 38, 0.95);
-    }
-    nav a,
-    .brand {
-        color: var(--ink);
-    }
-    .person,
-    .advisor,
-    .cards article {
-        background: #102033;
-        color: var(--ink);
-    }
-    .section-alt,
-    .pale {
-        background: #0e1d2c;
-    }
-    .light {
-        color: var(--ink);
-        border-color: #506273;
-    }
-}
