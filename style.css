@@ -24,7 +24,10 @@ h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.03em;margin:0 0 22px}h3{font-
 .section p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:40px}
 .cards article{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;min-height:300px}
 .cards p{font-size:14px}.people{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px}
-.person{border:1px solid var(--line);border-radius:12px;padding:25px;background:#fff}
+/* =========================
+   FOUNDER
+   ========================= */
+
 .person {
     border: 1px solid var(--line);
     border-radius: 12px;
@@ -34,12 +37,52 @@ h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.03em;margin:0 0 22px}h3{font-
     align-items: center;
     gap: 16px;
 }
+
 .avatar {
-    width: 56px;
-    height: 56px;
-    flex: 0 0 56px;
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   SCIENTIFIC ADVISORY BOARD
+   ========================= */
+.board-title {
+    margin-top: 55px;
+}
+.advisory-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+.advisor {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 25px;
+    background: #fff;
+}
+.advisor h3 {
+    margin: 0 0 8px;
+}
+.advisor .role {
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.advisor p {
+    font-size: 14px;
 }
 .avatar img {
     width: 100%;
@@ -47,6 +90,38 @@ h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.03em;margin:0 0 22px}h3{font-
     object-fit: cover;
     display: block;
 }
+/* =========================
+   RESPONSIVE LAYOUT
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .people {
+        grid-template-columns: 1fr;
+    }
+
+    .advisory-board {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (max-width: 520px) {
+
+    .advisory-board {
+        grid-template-columns: 1fr;
+    }
+
+    .person {
+        align-items: flex-start;
+    }
+    .avatar {
+        width: 64px;
+        height: 64px;
+        flex: 0 0 64px;
+    }
+
+}
+
 .contact{padding:90px 0;background:var(--ink);color:white}.contact p{color:#c5d0da}.contact 
 .eyebrow{color:#d9b86b}.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:70px;align-items:center}
 .contact a{color:#fff;text-decoration:none;font:500 25px "Space Grotesk"}
